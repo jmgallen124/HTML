@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My First HTML File</title>
+	<title>My Example HTML File</title>
 </head>
 <body>
-	<p>This is my first HTML paragraph.</p>
+	<!--My sample webpage to display an example paragraph, link, and image.-->
+
+	<p>This is my first HTML paragraph.
+		<p>This is my first nested HTML paragraph.</p>
+	</p>
+
+	I'm <span style="color:green">GREEN</span> with envy!
+
 	<p><a href="http://www.google.com">Link to Google</a></p>
-	<p><img src="PurpleDragon.png" /></p>
+
+	<h1>My Top 5 RPGs</h1>
+	<ol>
+		<li><em>Dust: An Elysian Tail</em></li>
+		<li>Tails of Iron</li>
+		<li>F.I.S.T.: Forged in Shadow Torch</li>
+		<li>Timespinner</li>
+		<li>Devil Survivor 2: Record Breaker</i>
+	</ol>
+
+	<h2>My Top RPG Series</h2>
+	<ul>
+		<li><strong>Many Metroidvanias</strong></li>
+		<li>Megami Tensei</li>
+		<li>Dragon Quest</li>
+		<li>Tales</li>
+		<li>A Few Vanillaware Games</li>
+	</ul>
+
+	<h3>Videogame Franchises</h3>
+	<table border="2">
+		<thead>
+			<tr>
+				<th>Name of Franchise</th>
+				<th>Developer</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Mario</td>
+				<td>Nintendo</td>
+			</tr>
+			<tr>
+				<td>Megami Tensei</td>
+				<td>Atlus</td>
+			</tr>
+			<tr>
+				<td>Mega Man</td>
+				<td>Capcom</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<hr/>
+
+	<h4>Contact Form</h4>
+	<form>
+
+		<label>Name: <input type="text" name="name" placeholder="name" required /></label><br/>
+
+		<label>Male <input type="radio" name="gender" value="male" /></label>
+		<label>Female <input type="radio" name="gender" value="female" /></label>
+		<label>Other <input type="radio" name="gender" value="other" /></label><br/>
+
+		<label>Email: <input type="email" name="email" placeholder="your email" required /></label>
+		<label>Password: <input type="password" name="password" placeholder="your password" 
+			pattern=".{5,10} title="Please enter a password of five to ten characters" /></label><br/>
+
+		<label for="">Birthday: </label>
+		<select id="birthday" name="Month">
+			<option>Month</option>
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+			<option>April</option>
+			<option>May</option>
+			<option>June</option>
+			<option>July</option>
+			<option>August</option>
+			<option>September</option>
+			<option>October</option>
+			<option>November</option>
+			<option>December</option>
+		</select>
+		<select id="birthday" name="Day">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+			<option>14</option>
+			<option>15</option>
+			<option>16</option>
+			<option>17</option>
+			<option>18</option>
+			<option>19</option>
+			<option>20</option>
+			<option>21</option>
+			<option>22</option>
+			<option>23</option>
+			<option>24</option>
+			<option>25</option>
+			<option>26</option>
+			<option>27</option>
+			<option>28</option>
+			<option>29</option>
+			<option>30</option>
+			<option>31</option>
+		</select><br/>
+
+		<label>I agree to the terms and conditions.
+			<input type="checkbox" name="check">
+		</label><br/>
+
+		<input type="submit" name="submit">
+
+	</form>
+
+	<div style="color:purple"><h3>Here, have an image of a purple dragon:</h3><br/>
+	<img src="PurpleDragon.png" alt="Unable to load image." title="A picture of a purple dragon." 
+		height="25%" width="25%" /></div>
+
 </body>
 </html>
